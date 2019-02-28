@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="top_container">
+      <button type="button" class="btn" href="#">
+        <a href="#">Go to Main Website</a>
+      </button>
+    </div>
+  </nav>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquam justo vitae suscipit varius. Praesent ut
+    magna nunc. Nunc efficitur justo ac pulvinar malesuada. Sed eu volutpat orci. Ut magna diam, fringilla eu tellus
+    quis, varius cursus eros. Fusce mollis metus nec ipsum interdum tristique.<span id="dots">...</span><span id="more">
+      Vestibulum eget dolor sapien. Cras
+      accumsan semper mi in porta. Suspendisse potenti. Integer massa nisi, ultrices vel felis quis, iaculis dapibus
+      risus. Maecenas euismod consequat nulla, scelerisque rhoncus mi finibus hendrerit.
+
+      Duis non lobortis magna. Integer molestie et metus pulvinar ornare. Fusce mattis libero nec tortor interdum
+      eleifend
+      id quis magna. Integer ullamcorper et leo condimentum volutpat. Cras ac dui risus. In imperdiet suscipit arcu, non
+      gravida velit gravida sit amet. Donec vitae volutpat felis. Aenean nulla dolor, dapibus rhoncus sagittis at,
+      venenatis sit amet nisi. Aliquam eu sapien hendrerit, tincidunt felis ut, viverra quam. Vestibulum vitae mattis
+      nulla.
+
+      Vivamus felis tellus, aliquet eget velit eget, laoreet tristique arcu. Phasellus et erat vitae ipsum auctor
+      dictum.
+      Cras bibendum dolor sit amet ligula facilisis, vel suscipit magna dapibus. Vestibulum vestibulum porttitor
+      convallis. Nullam tristique, nibh a pellentesque commodo, tellus ante faucibus risus, sed venenatis eros nisl
+      vitae
+      elit. Fusce sollicitudin euismod orci a fermentum. Curabitur eget justo luctus, rutrum metus a, egestas nibh.
+      Praesent metus massa, vestibulum id purus congue, volutpat molestie augue. Sed lobortis quis sapien lacinia
+      molestie. Nunc congue erat id dolor dignissim finibus. Mauris consectetur, leo non ullamcorper tincidunt, quam
+      elit
+      vulputate neque, at aliquet ligula eros sed tortor. Suspendisse vitae consectetur quam. Vivamus eros neque,
+      placerat
+      ac posuere non, dignissim et mi. Sed orci lacus, commodo in vestibulum quis, faucibus vitae metus.
+
+      Nunc dignissim magna sit amet dignissim molestie. Aliquam in ultrices justo. Suspendisse luctus consectetur
+      gravida.
+      Duis et sem hendrerit, egestas neque vitae, tincidunt odio. Sed ut nulla a mauris tincidunt vehicula. Cras egestas
+      iaculis egestas. Phasellus gravida ante sem, ut placerat nibh porta facilisis. Donec semper iaculis purus at
+      pellentesque. Curabitur ligula orci, pellentesque in neque in, semper ultrices risus. Praesent sit amet tortor
+      ligula.
+
+      Vestibulum hendrerit diam eu felis fringilla, et pharetra nibh pharetra. Sed euismod interdum libero ullamcorper
+      porta. Nulla erat risus, faucibus vitae erat eu, pretium varius erat. Sed dui ex, euismod vel magna non, semper
+      elementum lacus. Etiam semper arcu erat, sed porttitor mi venenatis ornare. Orci varius natoque penatibus et
+      magnis
+      dis parturient montes, nascetur ridiculus mus. Aliquam vel nisl auctor augue condimentum iaculis ut a massa.
+      Vestibulum interdum non justo vitae gravida. Vestibulum fringilla justo a nibh lacinia, id lacinia est rhoncus.
+      Vivamus laoreet nunc nec eleifend rutrum. Pellentesque habitant morbi tristique senectus et netus et malesuada
+      fames
+      ac turpis egestas. Fusce facilisis facilisis libero, eu pharetra ex.</span></p>
+  <button onclick="myFunction()" id="myBtn">Read more</button>
+  <script>
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+      }
+    }
+  </script>
+  <hr>
+  <img class="img-fluid" src="https://picsum.photos/1200/600/?random" alt="">
+  <div class="container">
+    <div class="d-flex" id="fetchFalse"></div>
+  </div>
+  <footer>
+    <div>
+      <p>Samuele Capacci - Prova 1 - Landing page </p>
+    </div>
+    <script type="text/javascript">
+      var data = new Date();
+      var gg, mm, aaaa;
+      gg = data.getDate() + "/";
+      mm = data.getMonth() + 1 + "/";
+      aaaa = data.getFullYear();
+      document.write("Oggi è il " + gg + mm + aaaa);
+    </script>
+  </footer>
+</body>
+
+</html>
